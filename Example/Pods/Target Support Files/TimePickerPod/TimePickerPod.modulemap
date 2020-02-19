@@ -1,0 +1,6 @@
+framework module TimePickerPod {
+  umbrella header "TimePickerPod-umbrella.h"
+
+  export *
+  module * { export * }
+}

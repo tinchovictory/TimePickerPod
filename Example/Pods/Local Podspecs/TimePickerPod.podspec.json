@@ -1,0 +1,22 @@
+{
+  "name": "TimePickerPod",
+  "version": "0.1.0",
+  "summary": "A short description of TimePickerPod.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/tinchovictory/TimePickerPod",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "tinchovictory": "martin@victory.com.ar"
+  },
+  "source": {
+    "git": "https://github.com/tinchovictory/TimePickerPod.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "TimePickerPod/Classes/**/*"
+}

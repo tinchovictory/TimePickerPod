@@ -30,7 +30,7 @@
 /* Begin PBXFileReference section */
 		345CCCF66BE8EBCF2C451354 /* Pods-TimePickerPod_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimePickerPod_Tests.debug.xcconfig"; path = "Target Support Files/Pods-TimePickerPod_Tests/Pods-TimePickerPod_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		423750C7F3DBCD35DA5FF00A /* Pods-TimePickerPod_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimePickerPod_Tests.release.xcconfig"; path = "Target Support Files/Pods-TimePickerPod_Tests/Pods-TimePickerPod_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		4C4E35832233452E179ACF82 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		4C4E35832233452E179ACF82 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* TimePickerPod_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimePickerPod_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -41,9 +41,9 @@
 		607FACE51AFB9204008FA782 /* TimePickerPod_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimePickerPod_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		6BFE33170DEF459EFE983620 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		6BFE33170DEF459EFE983620 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		6FE53BBE08E0EE72D1A6A12C /* Pods_TimePickerPod_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TimePickerPod_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		83FE94EFF24A9BEB110CD98A /* TimePickerPod.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = TimePickerPod.podspec; path = ../TimePickerPod.podspec; sourceTree = "<group>"; };
+		83FE94EFF24A9BEB110CD98A /* TimePickerPod.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = TimePickerPod.podspec; path = ../TimePickerPod.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		DAED186E8B5B79F170180BC3 /* Pods-TimePickerPod_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimePickerPod_Example.debug.xcconfig"; path = "Target Support Files/Pods-TimePickerPod_Example/Pods-TimePickerPod_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		E0E4677F9332727FB5E3EE84 /* Pods_TimePickerPod_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TimePickerPod_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4362DCFFA6419B77CD5E03D /* Pods-TimePickerPod_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimePickerPod_Example.release.xcconfig"; path = "Target Support Files/Pods-TimePickerPod_Example/Pods-TimePickerPod_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -77,7 +77,6 @@
 				345CCCF66BE8EBCF2C451354 /* Pods-TimePickerPod_Tests.debug.xcconfig */,
 				423750C7F3DBCD35DA5FF00A /* Pods-TimePickerPod_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -228,6 +227,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);

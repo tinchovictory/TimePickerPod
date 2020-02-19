@@ -1,9 +1,10 @@
 # TimePickerPod
 
 [![CI Status](https://img.shields.io/travis/tinchovictory/TimePickerPod.svg?style=flat)](https://travis-ci.org/tinchovictory/TimePickerPod)
-[![Version](https://img.shields.io/cocoapods/v/TimePickerPod.svg?style=flat)](https://cocoapods.org/pods/TimePickerPod)
-[![License](https://img.shields.io/cocoapods/l/TimePickerPod.svg?style=flat)](https://cocoapods.org/pods/TimePickerPod)
-[![Platform](https://img.shields.io/cocoapods/p/TimePickerPod.svg?style=flat)](https://cocoapods.org/pods/TimePickerPod)
+[![Version](https://img.shields.io/github/v/release/tinchovictory/timepickerpod)](https://github.com/tinchovictory/timepickerpod/releases)
+[![License](https://img.shields.io/github/license/tinchovictory/timepickerpod)](https://github.com/tinchovictory/TimePickerPod/blob/master/LICENSE)
+
+A simple pod for selecting a time range, in the HH:MM format.
 
 ## Example
 

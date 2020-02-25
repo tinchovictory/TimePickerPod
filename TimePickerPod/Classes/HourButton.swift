@@ -38,8 +38,8 @@ class HourButton: UIView {
         let hourStr = hourString(from: hour)
         let hour = NSMutableAttributedString(string: hourStr)
        
-        hour.setAttributes([NSAttributedStringKey.font: UIFont.systemFont(ofSize: 18, weight: .medium)], range: NSMakeRange(0, hourStr.count))
-        hour.setAttributes([NSAttributedStringKey.font: UIFont.systemFont(ofSize: 12, weight: .light)], range: NSMakeRange(hourStr.count - 2, 2))
+        hour.setAttributes([NSAttributedString.Key.font: UIFont.systemFont(ofSize: 18, weight: .medium)], range: NSMakeRange(0, hourStr.count))
+        hour.setAttributes([NSAttributedString.Key.font: UIFont.systemFont(ofSize: 12, weight: .light)], range: NSMakeRange(hourStr.count - 2, 2))
         
         return hour
     }

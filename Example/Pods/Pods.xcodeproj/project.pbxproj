@@ -29,7 +29,6 @@
 		2A94FACEA07096DDE05ACF58491DD963 /* World+DSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = B054E4C3B8A9E993536DF762AA778F72 /* World+DSL.swift */; };
 		2A95AD48CE160CCC59957E4F91EEC9B9 /* XCTestSuite+QuickTestSuiteBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EA22445A04BE26515A64C487863540F /* XCTestSuite+QuickTestSuiteBuilder.m */; };
 		2ADD7D3E0B94EF044CF3FFD2F8EA2C67 /* DSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CC83AA5604D45994069BA15E506569 /* DSL.swift */; };
-		2B2DE7DCEA304A190B0FAEAF7FB16FE7 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E10C16C342693C7039DEEB73E62B88 /* ReplaceMe.swift */; };
 		2B81EF77D89288DD3D8F3D43958B8759 /* FBSnapshotTestCase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45544E7DC8BC621B5141430C9031836E /* FBSnapshotTestCase.framework */; };
 		2D57849BBE4DB509C70D6DC48E6E21B3 /* ToSucceed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AFC19F65DFFE3691C4254714D8AADF /* ToSucceed.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		2DCFF0CE0BD295F1D46D3247F36B192C /* UIImage+Compare.m in Sources */ = {isa = PBXBuildFile; fileRef = C8840D6C1270531B4A2D68B805556F67 /* UIImage+Compare.m */; };
@@ -56,6 +55,9 @@
 		54A61062B9FB72C6BA0054B2A685ED0E /* Equal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B69FCB3B7E6DB593DC4744314572ED4 /* Equal.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		5A49B2C87AABFAED124DE8DDCC2FEAA1 /* World.h in Headers */ = {isa = PBXBuildFile; fileRef = 8036C74125A971703752608CB217DDC1 /* World.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		5B8DC6716BDD04AF78AC8048F5BACF38 /* SatisfyAllOf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F5D84D0A37C8FEF71B3748E637B755 /* SatisfyAllOf.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
+		5BD320E624047C6D00945AD4 /* TimePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD320E524047C6D00945AD4 /* TimePickerView.swift */; };
+		5BD320E8240482D700945AD4 /* HalfDaySection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD320E7240482D700945AD4 /* HalfDaySection.swift */; };
+		5BD320EA2404884F00945AD4 /* HourButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD320E92404884F00945AD4 /* HourButton.swift */; };
 		5CE5E8EA75E0B3DC5BE140B61DF37EFD /* Nimble-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C4146C224AAED48AE519602D554E4ACA /* Nimble-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		62DFF94A7A777939C861EDA13627999B /* Nimble.h in Headers */ = {isa = PBXBuildFile; fileRef = D50C1A0D16BFAD8846126533C953C7BA /* Nimble.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		63B6EE789529A220E576A10E3356FBEE /* NimbleEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2285555C127698E7886F270EA14750 /* NimbleEnvironment.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
@@ -288,13 +290,15 @@
 		572E2B6BC86F1492D00AD6769E465605 /* ExampleGroup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExampleGroup.swift; path = Sources/Quick/ExampleGroup.swift; sourceTree = "<group>"; };
 		58F5D84D0A37C8FEF71B3748E637B755 /* SatisfyAllOf.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SatisfyAllOf.swift; path = Sources/Nimble/Matchers/SatisfyAllOf.swift; sourceTree = "<group>"; };
 		59D905CBF55A2D28A21556AEBC063AE5 /* HaveValidDynamicTypeSnapshot.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HaveValidDynamicTypeSnapshot.swift; path = DynamicType/HaveValidDynamicTypeSnapshot.swift; sourceTree = "<group>"; };
+		5BD320E524047C6D00945AD4 /* TimePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimePickerView.swift; sourceTree = "<group>"; };
+		5BD320E7240482D700945AD4 /* HalfDaySection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HalfDaySection.swift; sourceTree = "<group>"; };
+		5BD320E92404884F00945AD4 /* HourButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourButton.swift; sourceTree = "<group>"; };
 		5C4F31330DFA99D699E4BDC8C3573D73 /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CE5915B278F2BB7FDC396B332969DEB /* QCKDSL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QCKDSL.h; path = Sources/QuickObjectiveC/DSL/QCKDSL.h; sourceTree = "<group>"; };
 		6024C935E6646CC9593647346BD3C6C6 /* RaisesException.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RaisesException.swift; path = Sources/Nimble/Matchers/RaisesException.swift; sourceTree = "<group>"; };
 		60A48FCC9BCF5F300AA45E499FAFDDD9 /* BeLessThanOrEqual.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeLessThanOrEqual.swift; path = Sources/Nimble/Matchers/BeLessThanOrEqual.swift; sourceTree = "<group>"; };
 		6184199FB3B5007912CC2B0944710532 /* HooksPhase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HooksPhase.swift; path = Sources/Quick/Hooks/HooksPhase.swift; sourceTree = "<group>"; };
 		62AF7240466EFB66E073A677F87AB94B /* FBSnapshotTestCase-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-prefix.pch"; sourceTree = "<group>"; };
-		65E10C16C342693C7039DEEB73E62B88 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReplaceMe.swift; sourceTree = "<group>"; };
 		66D6DD269D4CB9D2E2C9467F1ECA875F /* NSString+C99ExtendedIdentifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSString+C99ExtendedIdentifier.swift"; path = "Sources/Quick/NSString+C99ExtendedIdentifier.swift"; sourceTree = "<group>"; };
 		677D07E1A16E33C783B548FB431AFB15 /* Quick-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Quick-umbrella.h"; sourceTree = "<group>"; };
 		67D513C48B586B6294A345A3A4E6E58C /* NMBObjCMatcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NMBObjCMatcher.swift; path = Sources/Nimble/Adapters/NMBObjCMatcher.swift; sourceTree = "<group>"; };
@@ -653,7 +657,9 @@
 		5BD320E023FDD22E00945AD4 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				65E10C16C342693C7039DEEB73E62B88 /* ReplaceMe.swift */,
+				5BD320E524047C6D00945AD4 /* TimePickerView.swift */,
+				5BD320E7240482D700945AD4 /* HalfDaySection.swift */,
+				5BD320E92404884F00945AD4 /* HourButton.swift */,
 			);
 			name = Classes;
 			path = TimePickerPod/Classes;
@@ -1106,6 +1112,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
 				LastUpgradeCheck = 1100;
+				TargetAttributes = {
+					1573AF8CB8426D6378CDB586085D1F2F = {
+						LastSwiftMigration = 1130;
+					};
+				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -1338,8 +1349,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B2DE7DCEA304A190B0FAEAF7FB16FE7 /* ReplaceMe.swift in Sources */,
+				5BD320E8240482D700945AD4 /* HalfDaySection.swift in Sources */,
+				5BD320E624047C6D00945AD4 /* TimePickerView.swift in Sources */,
 				ECAA3EFFC22A834E830DD03C306CBB90 /* TimePickerPod-dummy.m in Sources */,
+				5BD320EA2404884F00945AD4 /* HourButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1401,6 +1414,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 265D532CDE36F51B7930F25264CCF730 /* TimePickerPod.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1413,7 +1427,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/TimePickerPod/TimePickerPod-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/TimePickerPod/TimePickerPod-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/TimePickerPod/TimePickerPod.modulemap";
 				PRODUCT_MODULE_NAME = TimePickerPod;
@@ -1421,6 +1435,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1688,6 +1703,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 265D532CDE36F51B7930F25264CCF730 /* TimePickerPod.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1700,7 +1716,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/TimePickerPod/TimePickerPod-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/TimePickerPod/TimePickerPod-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/TimePickerPod/TimePickerPod.modulemap";
 				PRODUCT_MODULE_NAME = TimePickerPod;

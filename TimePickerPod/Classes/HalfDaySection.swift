@@ -11,19 +11,31 @@ enum HalfDayType {
     case day, night
 }
 
-public class HalfDaySection: UIView {
+class HalfDaySection: UIView {
     
-    private let initialHour = 8, finalHour = 19
+    private var initialHour: Int!
     private let hoursPerRow = 6
+    private let halfDayType: HalfDayType
     
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        
+    init(halfDayType: HalfDayType) {
+        self.halfDayType = halfDayType
+        super.init(frame: .zero)
+
+        setRangeHours(for: halfDayType)
         setSubviews()
     }
     
     required init?(coder: NSCoder) {
-        super.init(coder: coder)
+        fatalError("Not implemented")
+    }
+    
+    private func setRangeHours(for halfDayType: HalfDayType) {
+        switch halfDayType {
+        case .day:
+            self.initialHour = 8
+        case .night:
+            self.initialHour = 20
+        }
     }
     
     private func setSubviews() {
@@ -31,37 +43,45 @@ public class HalfDaySection: UIView {
         horizontalStackView.axis = .horizontal
         horizontalStackView.distribution = .fillEqually
         
+        horizontalStackView.addArrangedSubview(getHourRangeIcon())
+        
+        for i in 0 ..< hoursPerRow {
+            let verticalStackView = buildVerticalStackView()
+            verticalStackView.addArrangedSubview(HourButton(hour: (initialHour + i) % 24))
+            verticalStackView.addArrangedSubview(HourButton(hour: (initialHour + i + hoursPerRow) % 24))
+            horizontalStackView.addArrangedSubview(verticalStackView)
+        }
+        
+        self.addSubview(horizontalStackView)
+        addConstraints(to: horizontalStackView)
+    }
+
+    private func getHourRangeIcon() -> UIView {
         let hourRangeIcon = UILabel()
         hourRangeIcon.text = "S"
         hourRangeIcon.textAlignment = .center
         hourRangeIcon.layer.borderColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.2).cgColor
         hourRangeIcon.layer.borderWidth = 0.5
-        horizontalStackView.addArrangedSubview(hourRangeIcon)
         
-        for i in initialHour..<(initialHour + hoursPerRow) {
-            let verticalStackView = UIStackView()
-            verticalStackView.axis = .vertical
-            verticalStackView.distribution = .fillEqually
-
-            verticalStackView.addArrangedSubview(HourButton(hour: i))
-
-            if i + hoursPerRow <= finalHour {
-                verticalStackView.addArrangedSubview(HourButton(hour: i + hoursPerRow))
-            }
-            
-            horizontalStackView.addArrangedSubview(verticalStackView)
-        }
-        
-        self.addSubview(horizontalStackView)
-        horizontalStackView.translatesAutoresizingMaskIntoConstraints = false
+        return hourRangeIcon
+    }
+    
+    private func addConstraints(to view: UIView) {
+        view.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
-            horizontalStackView.topAnchor.constraint(equalTo: self.topAnchor),
-            horizontalStackView.rightAnchor.constraint(equalTo: self.rightAnchor),
-            horizontalStackView.bottomAnchor.constraint(equalTo: self.bottomAnchor),
-            horizontalStackView.leftAnchor.constraint(equalTo: self.leftAnchor),
+            view.topAnchor.constraint(equalTo: self.topAnchor),
+            view.trailingAnchor.constraint(equalTo: self.trailingAnchor),
+            view.bottomAnchor.constraint(equalTo: self.bottomAnchor),
+            view.leadingAnchor.constraint(equalTo: self.leadingAnchor),
         ])
     }
-
     
+    private func buildVerticalStackView() -> UIStackView {
+        let verticalStackView = UIStackView()
+        verticalStackView.axis = .vertical
+        verticalStackView.distribution = .fillEqually
+        return verticalStackView
+    }
+
 }

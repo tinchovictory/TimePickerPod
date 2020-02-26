@@ -28,7 +28,7 @@ class ViewController: UIViewController {
 //
 //        self.view.addSubview(button)
         
-        let halfDaySection = HalfDaySection()
+        let halfDaySection = TimePickerView()
         halfDaySection.translatesAutoresizingMaskIntoConstraints = false
 //        halfDaySection.backgroundColor = .cyan
         self.view.addSubview(halfDaySection)

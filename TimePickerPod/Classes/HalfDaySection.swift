@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FontAwesome_swift
 
 enum HalfDayType {
     case day, night
@@ -58,11 +59,19 @@ class HalfDaySection: UIView {
 
     private func getHourRangeIcon() -> UIView {
         let hourRangeIcon = UILabel()
-        hourRangeIcon.text = "S"
+        hourRangeIcon.font = UIFont.fontAwesome(ofSize: 25, style: .solid)
         hourRangeIcon.textAlignment = .center
+        hourRangeIcon.textColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.3)
         hourRangeIcon.layer.borderColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.2).cgColor
         hourRangeIcon.layer.borderWidth = 0.5
-        
+
+        switch self.halfDayType {
+        case .day:
+            hourRangeIcon.text = String.fontAwesomeIcon(name: .sun)
+        case .night:
+            hourRangeIcon.text = String.fontAwesomeIcon(name: .moon)
+        }
+
         return hourRangeIcon
     }
     

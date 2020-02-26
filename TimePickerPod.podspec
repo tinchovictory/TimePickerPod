@@ -32,6 +32,8 @@ A cocoapod for selecting a time range.
   s.swift_version = '4.2'
 
   s.source_files = 'TimePickerPod/Classes/**/*'
+
+  s.dependency 'FontAwesome.swift', '~> 1.8'
   
   # s.resource_bundles = {
   #   'TimePickerPod' => ['TimePickerPod/Assets/*.png']

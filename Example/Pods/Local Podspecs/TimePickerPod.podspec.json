@@ -1,8 +1,8 @@
 {
   "name": "TimePickerPod",
   "version": "0.1.0",
-  "summary": "A short description of TimePickerPod.",
-  "description": "TODO: Add long description of the pod here.",
+  "summary": "A cocopod for selecting a time range",
+  "description": "A cocoapod for selecting a time range.",
   "homepage": "https://github.com/tinchovictory/TimePickerPod",
   "license": {
     "type": "MIT",
@@ -16,7 +16,14 @@
     "tag": "0.1.0"
   },
   "platforms": {
-    "ios": "8.0"
+    "ios": "9.0"
   },
-  "source_files": "TimePickerPod/Classes/**/*"
+  "swift_versions": "4.2",
+  "source_files": "TimePickerPod/Classes/**/*",
+  "dependencies": {
+    "FontAwesome.swift": [
+      "~> 1.8"
+    ]
+  },
+  "swift_version": "4.2"
 }

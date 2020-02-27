@@ -8,7 +8,8 @@
 import UIKit
 
 public class TimePickerView: UIView {
-    
+   
+    public var delegate: TimePickerDelegate?
     private var halfDaySectionSun: HalfDaySection!
     private var halfDaySectionNight: HalfDaySection!
 
@@ -28,10 +29,10 @@ public class TimePickerView: UIView {
     }
     
     private func setSubviews() {
-        self.halfDaySectionSun = HalfDaySection(halfDayType: .day)
+        self.halfDaySectionSun = HalfDaySection(halfDayType: .day, delegate: self)
         self.addSubview(self.halfDaySectionSun)
         
-        self.halfDaySectionNight = HalfDaySection(halfDayType: .night)
+        self.halfDaySectionNight = HalfDaySection(halfDayType: .night, delegate: self)
         self.addSubview(self.halfDaySectionNight)
     }
     
@@ -51,4 +52,12 @@ public class TimePickerView: UIView {
         ])
     }
     
+}
+
+extension TimePickerView: TimePickerDelegate {
+    public func didSelect(hour: Date) {
+        self.halfDaySectionSun.deselectHours()
+        self.halfDaySectionNight.deselectHours()
+        self.delegate?.didSelect(hour: hour)
+    }
 }

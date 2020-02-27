@@ -9,10 +9,19 @@ import UIKit
 
 class HourButton: UIView {
 
-    private let label: UILabel
+    var isSelected = false {
+        didSet {
+            toggleSelect()
+        }
+    }
+    private var delegate: TimePickerDelegate
 
-    init(hour: Int) {
+    private let label: UILabel
+    private let selectedColor = UIColor(red: 0.5, green: 0.32, blue: 0.73, alpha: 1.0)
+
+    init(hour: Int, delegate: TimePickerDelegate) {
         self.label = UILabel()
+        self.delegate = delegate
         
         super.init(frame: .zero)
         self.layer.borderColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.2).cgColor
@@ -21,6 +30,8 @@ class HourButton: UIView {
         self.label.translatesAutoresizingMaskIntoConstraints = false
         self.label.attributedText = format(hour: hour)
         self.addSubview(self.label)
+        
+        self.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(setSelected)))
 
         NSLayoutConstraint.activate([
             self.label.centerXAnchor.constraint(equalTo: self.centerXAnchor),
@@ -49,6 +60,21 @@ class HourButton: UIView {
             return "\(hour % 12)PM"
         }
         return "\(hour)AM"
+    }
+    
+    private func toggleSelect() {
+        if self.isSelected {
+            self.backgroundColor = selectedColor
+            self.label.textColor = .white
+        } else {
+            self.backgroundColor = .none
+            self.label.textColor = .black
+        }
+    }
+    
+    @objc private func setSelected() {
+        delegate.didSelect(hour: Date())
+        self.isSelected = true
     }
     
 }

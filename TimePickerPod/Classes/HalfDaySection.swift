@@ -13,13 +13,16 @@ enum HalfDayType {
 }
 
 class HalfDaySection: UIView {
-    
+   
     private var initialHour: Int!
     private let hoursPerRow = 6
     private let halfDayType: HalfDayType
+    private var hourButtons = [HourButton]()
+    private var delegate: TimePickerDelegate
     
-    init(halfDayType: HalfDayType) {
+    init(halfDayType: HalfDayType, delegate: TimePickerDelegate) {
         self.halfDayType = halfDayType
+        self.delegate = delegate
         super.init(frame: .zero)
 
         setRangeHours(for: halfDayType)
@@ -48,8 +51,15 @@ class HalfDaySection: UIView {
         
         for i in 0 ..< hoursPerRow {
             let verticalStackView = buildVerticalStackView()
-            verticalStackView.addArrangedSubview(HourButton(hour: (initialHour + i) % 24))
-            verticalStackView.addArrangedSubview(HourButton(hour: (initialHour + i + hoursPerRow) % 24))
+            
+            var hourButton = HourButton(hour: (initialHour + i) % 24, delegate: self.delegate)
+            hourButtons.append(hourButton)
+            verticalStackView.addArrangedSubview(hourButton)
+            
+            hourButton = HourButton(hour: (initialHour + i + hoursPerRow) % 24, delegate: self.delegate)
+            hourButtons.append(hourButton)
+            verticalStackView.addArrangedSubview(hourButton)
+            
             horizontalStackView.addArrangedSubview(verticalStackView)
         }
         
@@ -91,6 +101,12 @@ class HalfDaySection: UIView {
         verticalStackView.axis = .vertical
         verticalStackView.distribution = .fillEqually
         return verticalStackView
+    }
+    
+    func deselectHours() {
+        for hourButton in hourButtons {
+            hourButton.isSelected = false
+        }
     }
 
 }

@@ -810,7 +810,8 @@
 			children = (
 				5BD320EE2407098E00945AD4 /* TimePickerDelegate.swift */,
 			);
-			path = Delegates;
+			name = Delegates;
+			path = TimePickerPod/Classes/Delegates;
 			sourceTree = "<group>";
 		};
 		5ED3BBFB5CAE81455A9761E35B94718C /* SwiftSupport */ = {

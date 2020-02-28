@@ -7,8 +7,10 @@
 
 import Foundation
 
-public protocol TimePickerDelegate: class {
+protocol TimePickerDelegate: class {
     func didSelect(hour: Date)
     
     func didSelect(minute: Date)
+    
+    func didSelect(topSection: TopSectionType)
 }

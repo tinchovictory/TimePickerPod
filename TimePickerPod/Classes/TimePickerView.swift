@@ -9,7 +9,8 @@ import UIKit
 
 public class TimePickerView: UIView {
    
-    public var delegate: TimePickerDelegate?
+//    public var delegate: TimePickerDelegate?
+    private var topSection: TopSection!
     private var halfDaySectionSun: HalfDaySection!
     private var halfDaySectionNight: HalfDaySection!
     private var minutesSection: MinutesSection!
@@ -30,6 +31,9 @@ public class TimePickerView: UIView {
     }
     
     private func setSubviews() {
+        self.topSection = TopSection(delegate: self)
+        self.addSubview(self.topSection)
+        
         self.halfDaySectionSun = HalfDaySection(halfDayType: .day, delegate: self)
         self.addSubview(self.halfDaySectionSun)
         
@@ -41,12 +45,17 @@ public class TimePickerView: UIView {
     }
     
     private func setConstraints() {
+        self.topSection.translatesAutoresizingMaskIntoConstraints = false
         self.halfDaySectionSun.translatesAutoresizingMaskIntoConstraints = false
         self.halfDaySectionNight.translatesAutoresizingMaskIntoConstraints = false
         self.minutesSection.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
-            self.halfDaySectionSun.topAnchor.constraint(equalTo: self.topAnchor),
+            self.topSection.topAnchor.constraint(equalTo: self.topAnchor),
+            self.topSection.leadingAnchor.constraint(equalTo: self.leadingAnchor),
+            self.topSection.trailingAnchor.constraint(equalTo: self.trailingAnchor),
+            
+            self.halfDaySectionSun.topAnchor.constraint(equalTo: self.topSection.bottomAnchor),
             self.halfDaySectionSun.trailingAnchor.constraint(equalTo: self.trailingAnchor),
             self.halfDaySectionSun.leadingAnchor.constraint(equalTo: self.leadingAnchor),
             
@@ -54,7 +63,7 @@ public class TimePickerView: UIView {
             self.halfDaySectionNight.trailingAnchor.constraint(equalTo: self.trailingAnchor),
             self.halfDaySectionNight.leadingAnchor.constraint(equalTo: self.leadingAnchor),
 
-            self.minutesSection.topAnchor.constraint(equalTo: self.halfDaySectionNight.bottomAnchor, constant: 5),
+            self.minutesSection.topAnchor.constraint(equalTo: self.halfDaySectionNight.bottomAnchor, constant: 0),
             self.minutesSection.trailingAnchor.constraint(equalTo: self.trailingAnchor),
             self.minutesSection.bottomAnchor.constraint(equalTo: self.bottomAnchor),
             self.minutesSection.leadingAnchor.constraint(equalTo: self.leadingAnchor),
@@ -65,14 +74,18 @@ public class TimePickerView: UIView {
 }
 
 extension TimePickerView: TimePickerDelegate {
-    public func didSelect(hour: Date) {
+    func didSelect(hour: Date) {
         self.halfDaySectionSun.deselectHours()
         self.halfDaySectionNight.deselectHours()
-        self.delegate?.didSelect(hour: hour)
+//        self.delegate?.didSelect(hour: hour)
     }
     
-    public func didSelect(minute: Date) {
+    func didSelect(minute: Date) {
         self.minutesSection.deselectMinutes()
-        self.delegate?.didSelect(minute: minute)
+//        self.delegate?.didSelect(minute: minute)
+    }
+    
+    func didSelect(topSection: TopSectionType) {
+        self.topSection.deselectTopSection()
     }
 }

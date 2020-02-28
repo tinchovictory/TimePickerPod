@@ -24,6 +24,7 @@ class HalfDaySection: UIView {
         self.halfDayType = halfDayType
         self.delegate = delegate
         super.init(frame: .zero)
+        self.backgroundColor = .white
 
         setRangeHours(for: halfDayType)
         setSubviews()

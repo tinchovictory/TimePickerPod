@@ -17,6 +17,9 @@ class MinutesSection: UIView {
         self.delegate = delegate
         
         super.init(frame: .zero)
+        self.backgroundColor = .white
+        self.layer.borderColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.2).cgColor
+        self.layer.borderWidth = 0.5
         
         setSubviews()
         setConstraints()

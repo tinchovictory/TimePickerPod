@@ -354,8 +354,8 @@
 		5A2472DE14B2111AAA6AA87A6BF64700 /* Callsite.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Callsite.swift; path = Sources/Quick/Callsite.swift; sourceTree = "<group>"; };
 		5B61428763E2D2B3CD3F1ADD29CADBFF /* FontAwesomeImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontAwesomeImageView.swift; path = FontAwesome/FontAwesomeImageView.swift; sourceTree = "<group>"; };
 		5BD320EE2407098E00945AD4 /* TimePickerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimePickerDelegate.swift; sourceTree = "<group>"; };
-		5BD320F32408264C00945AD4 /* MinutesSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MinutesSection.swift; path = TimePickerPod/Classes/MinutesSection.swift; sourceTree = "<group>"; };
-		5BD320F524085CB400945AD4 /* MinuteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MinuteButton.swift; path = TimePickerPod/Classes/MinuteButton.swift; sourceTree = "<group>"; };
+		5BD320F32408264C00945AD4 /* MinutesSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinutesSection.swift; sourceTree = "<group>"; };
+		5BD320F524085CB400945AD4 /* MinuteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinuteButton.swift; sourceTree = "<group>"; };
 		5C4F31330DFA99D699E4BDC8C3573D73 /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C7FE5C5000FD12D6977CAD47105C5EA /* Nimble-Snapshots.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Nimble-Snapshots.modulemap"; sourceTree = "<group>"; };
 		5D3BF5908CF990FBBAFBAF6C043AC1F2 /* Nimble-Snapshots-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Nimble-Snapshots-umbrella.h"; sourceTree = "<group>"; };
@@ -424,7 +424,7 @@
 		AB9B0F987B03586C56A91CBA864AADBB /* FontAwesome_swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FontAwesome_swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD50D9199E66A7B1D3A5C015C092D624 /* CwlCatchBadInstruction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CwlCatchBadInstruction.swift; path = Carthage/Checkouts/CwlPreconditionTesting/Sources/CwlPreconditionTesting/CwlCatchBadInstruction.swift; sourceTree = "<group>"; };
 		AD5999BF6F49745DCB5B4BE795259206 /* Font Awesome 5 Free-Solid-900.otf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = "Font Awesome 5 Free-Solid-900.otf"; path = "FontAwesome/Font Awesome 5 Free-Solid-900.otf"; sourceTree = "<group>"; };
-		AF6E65B45E2D287E66A68809FD1BE2DB /* HourButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HourButton.swift; path = TimePickerPod/Classes/HourButton.swift; sourceTree = "<group>"; };
+		AF6E65B45E2D287E66A68809FD1BE2DB /* HourButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HourButton.swift; sourceTree = "<group>"; };
 		B1611DAEB6A555E4D0B2A9F62C6EF714 /* FontAwesome.swift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FontAwesome.swift-Info.plist"; sourceTree = "<group>"; };
 		B28DAD3239997A9F30A490D2BCB7C9B3 /* DSL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DSL.h; path = Sources/NimbleObjectiveC/DSL.h; sourceTree = "<group>"; };
 		B3A0559670268E276761E142931D7C1D /* Font Awesome 5 Free-Regular-400.otf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = "Font Awesome 5 Free-Regular-400.otf"; path = "FontAwesome/Font Awesome 5 Free-Regular-400.otf"; sourceTree = "<group>"; };
@@ -453,7 +453,7 @@
 		CAE981BC2C6EAC898BEDE2A5D446A69F /* Nimble.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Nimble.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCF94AB24BB1ECF75E4D5FF656B807A2 /* Nimble-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Nimble-prefix.pch"; sourceTree = "<group>"; };
 		CD370842D9E21F6340AA379DE4B4D906 /* FontAwesome.swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FontAwesome.swift-umbrella.h"; sourceTree = "<group>"; };
-		CDC9397A24C5CBE599B9872CD052584A /* HalfDaySection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HalfDaySection.swift; path = TimePickerPod/Classes/HalfDaySection.swift; sourceTree = "<group>"; };
+		CDC9397A24C5CBE599B9872CD052584A /* HalfDaySection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HalfDaySection.swift; sourceTree = "<group>"; };
 		CE39BFAC3E8D111D864FEA8D163FD2BA /* Pods-TimePickerPod_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TimePickerPod_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		CE9369E2E737CDC55BD01C3575C8B8F2 /* Nimble-Snapshots-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Nimble-Snapshots-prefix.pch"; sourceTree = "<group>"; };
 		CE97DD79EFB11E40DC04D224C06094D1 /* FBSnapshotTestCase.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBSnapshotTestCase.xcconfig; sourceTree = "<group>"; };
@@ -809,6 +809,25 @@
 			path = Nimble;
 			sourceTree = "<group>";
 		};
+		5B9AE55E24096DEC00C943AF /* HalfDaySection */ = {
+			isa = PBXGroup;
+			children = (
+				CDC9397A24C5CBE599B9872CD052584A /* HalfDaySection.swift */,
+				AF6E65B45E2D287E66A68809FD1BE2DB /* HourButton.swift */,
+			);
+			name = HalfDaySection;
+			path = TimePickerPod/Classes/HalfDaySection;
+			sourceTree = "<group>";
+		};
+		5B9AE55F24096DFA00C943AF /* MinutesSection */ = {
+			isa = PBXGroup;
+			children = (
+				5BD320F32408264C00945AD4 /* MinutesSection.swift */,
+				5BD320F524085CB400945AD4 /* MinuteButton.swift */,
+			);
+			path = MinutesSection;
+			sourceTree = "<group>";
+		};
 		5BD320ED2407095B00945AD4 /* Delegates */ = {
 			isa = PBXGroup;
 			children = (
@@ -846,11 +865,9 @@
 			isa = PBXGroup;
 			children = (
 				5BD320ED2407095B00945AD4 /* Delegates */,
-				CDC9397A24C5CBE599B9872CD052584A /* HalfDaySection.swift */,
-				AF6E65B45E2D287E66A68809FD1BE2DB /* HourButton.swift */,
+				5B9AE55E24096DEC00C943AF /* HalfDaySection */,
+				5B9AE55F24096DFA00C943AF /* MinutesSection */,
 				C452A26ECBDF281012F5007EBC4E0E28 /* TimePickerView.swift */,
-				5BD320F32408264C00945AD4 /* MinutesSection.swift */,
-				5BD320F524085CB400945AD4 /* MinuteButton.swift */,
 				145F468870D377D2639345C0D5A3F972 /* Pod */,
 				511D69DE0F7F8BF11757529247DAD8B1 /* Support Files */,
 			);

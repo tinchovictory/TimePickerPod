@@ -9,4 +9,6 @@ import Foundation
 
 public protocol TimePickerDelegate: class {
     func didSelect(hour: Date)
+    
+    func didSelect(minute: Date)
 }

@@ -825,7 +825,8 @@
 				5BD320F32408264C00945AD4 /* MinutesSection.swift */,
 				5BD320F524085CB400945AD4 /* MinuteButton.swift */,
 			);
-			path = MinutesSection;
+			name = MinutesSection;
+			path = TimePickerPod/Classes/MinutesSection;
 			sourceTree = "<group>";
 		};
 		5BD320ED2407095B00945AD4 /* Delegates */ = {
